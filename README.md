@@ -1,5 +1,5 @@
 # Progra-Avanzada
 ## Preguntas Teoricas:
-1. ¿Que es un paradigma de programación?
-Hola
+1. ¿Que es un paradigma de programación?    
+    Hola
 2.
