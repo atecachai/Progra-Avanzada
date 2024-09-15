@@ -32,7 +32,7 @@ class Grilla:
     def caminos_1(self):
         num = self.factorial(self.ancho+self.largo)
         den = self.factorial(self.ancho)*self.factorial(self.largo)
-        return (num/den)
+        return (num/den) #cantidad de caminos
     
     #segundo metodo para calcular la cantidad de caminos posibles
     #cada item es un vertice de la grilla
@@ -49,7 +49,7 @@ class Grilla:
             for j in range(1, self.ancho+1):
                 grid[i][j] = grid[i][j-1]+grid[i-1][j]
         
-        return float(grid[self.largo][self.ancho])
+        return float(grid[self.largo][self.ancho]) #cantidad de caminos
     
    
     def ejecutar(self, metodo): #metodo para seleccionar el metodo
@@ -70,7 +70,7 @@ class Grilla:
         plt.plot(self.tiempoejecucion,label='Segundos')
         plt.legend()
         plt.grid(True)
-        #plt.savefig(filename)
+        #plt.savefig(filename)  #opcion para guardar imagenes en PNG
         plt.savefig(filename, format="svg")
         plt.show()
 
