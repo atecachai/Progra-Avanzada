@@ -70,7 +70,7 @@ class Grilla:
         plt.plot(self.tiempoejecucion,label='Segundos')
         plt.legend()
         plt.grid(True)
-        plt.savefig(filename)
+        #plt.savefig(filename)
         plt.savefig(filename, format="svg")
         plt.show()
 
