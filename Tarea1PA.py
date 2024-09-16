@@ -61,8 +61,7 @@ class Grilla:
                 self.caminos.append(self.caminos_1())
             if metodo == '2':
                 self.caminos.append(self.caminos_2())
-        print(self.caminos)
-        
+                        
     def grafico(self,filename):
         plt.figure(figsize=(8,6))
         plt.title('Tiempo de ejecución para distintos tamaños de grilla')
