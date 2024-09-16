@@ -9,7 +9,8 @@ class Grilla:
     def __init__(self, N, M):
         self.ancho = N
         self.largo = M
-        self.tiempoejecucion = []
+        self.tiempoejecucion = [] #tiempo de ejecucion de 1 o mas iteraciones
+        self.caminos = [] #cantidad de caminos de 1 o mas iteracines de distintas grillas
     
     @staticmethod    
     def tiempodemora(funcion):
@@ -53,14 +54,14 @@ class Grilla:
     
    
     def ejecutar(self, metodo): #metodo para seleccionar el metodo
-        caminos = [] #cantidad de caminos para cada grilla de tamaño NxN
         for i in range(1,100):
             self.ancho = i
             self.largo = i
             if metodo == '1':    
-                caminos.append(self.caminos_1())
+                self.caminos.append(self.caminos_1())
             if metodo == '2':
-                caminos.append(self.caminos_2())
+                self.caminos.append(self.caminos_2())
+        print(self.caminos)
         
     def grafico(self,filename):
         plt.figure(figsize=(8,6))
